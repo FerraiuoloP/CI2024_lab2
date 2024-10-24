@@ -11,4 +11,4 @@ Instances can be found at [this link](https://github.com/squillero/computational
 
 ## Contributors
 Some techniques implemented in my proposal were discussed and developed jointly with my colleague [GDennis01](https://github.com/GDennis01/).  
-We started from the same template, then we devised together a way to implement a crossover mechanism that would work in our scenario and we sort of implemented it together (although our versions differ).
+In particoular we started from the same template, then we devised together a way to implement a crossover/mutation. We concluded together that the Inversion Mutation operator (explained at this [link](https://en.wikipedia.org/wiki/Mutation_(genetic_algorithm))) was the best choice for our scenario.
