@@ -7,7 +7,7 @@ Instances can be found at [this link](https://github.com/squillero/computational
 Simple greedy algorithm for a fast solution to the TSP problem. The algorithm starts from a random city and then moves to the nearest city. Repeats until all cities are visited.
 ### Performance table
 **Note**: by steps we mean the number of iterations of the algorithm. The number of steps is not the same as the number of cities in the dataset.
-| Dataset | Steps | Min path length |
+| Dataset | Steps | Best sol length |
 | --- | --- | --- |
 |Vanuatu | 8 | 1475.528 Km |
 | Italy | 46 | 4436.031 Km |
@@ -26,10 +26,10 @@ It is a genetic algorithm implemented in the following way:
 5. **Parent selection**: Deterministic selection of the best `POPULATION_SIZE` individuals to form the next generation.
 
 ### Performance table
-**Note**: by `Steps` we mean the number of iterations of the algorithm while by `Fitness calls` we mean the number of times the fitness function is called. The `Best sol iter` is the iteration number in which the best solution has been found (out of `Steps` iterations).\
+**Note**: by `Steps` we mean the number of generations of the algorithm while by `Fitness calls` we mean the number of times the fitness function is called. The `Best sol gen` is the generation number in which the best solution has been found (out of `Steps` iterations).\
 I adjuststed the number of steps based on the dataset.
 
-| Dataset | Steps | Fitness calls | Best sol iter | Best sol length |
+| Dataset | Steps | Fitness calls | Best sol gen | Best sol length |
 | --- | --- | --- | --- | --- |
 |Vanuatu | 100 | 10052 | 21 | 1345.544 Km |
 | Italy | 1000 | 55052 | 566 | 4181.619 Km |
@@ -41,7 +41,7 @@ I adjuststed the number of steps based on the dataset.
 | China | 30000 | 1505052 | 29922 | 56652.405 Km |
 
 
-*We can notice that increasing the number of steps in the last datasets a better a slightly better solution is found*
+*We can notice that increasing the number of steps in the last datasets a better a slightly better solution is found, meaning that it can improve over time*
 
 # How to run
 Create a `cities` folder at the same level of the ipynb file and put the datasets (found [here](https://github.com/squillero/computational-intelligence/tree/master/2024-25/cities)) inside it.  
