@@ -1,6 +1,5 @@
 # Virtualenv
 my_virtual_env/
 
-poetry.lock
 
 cities/
